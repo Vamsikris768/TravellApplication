@@ -1,0 +1,88 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .toggle{
+    display: none;
+  }
+  ul{
+    display: flex;
+    align-items:center ;
+    gap:1.5rem;
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 1.2rem;
+    transition: 0.1s ease-in-out;
+  }
+  a:hover{
+    color:#023e88;
+  }
+  a:first-of-type{
+    color: #023e8a;
+    font-weight: 900;
+  }
+  button{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: #48cae4;
+    border: none;
+    transition: 0.3s ease-in-out;
+  }
+  button:hover{
+    background-color: #023e8a;
+    color: white;
+  }
+
+  @media screen and (min-width:280px) and (max-width:1080px){
+    .brand{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .toggle{
+      display: block;
+      cursor: pointer;
+    }
+    ul,button{
+      display: none; 
+    }
+
+  }
+  .Navbar ul{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 1rem;
+    width: 100%;
+    height: 30vh;
+    /* top: ${({ state }) => (state ? "50px" : "-400px")}; */
+  }
+  .Navbar .true-style{
+    top:10px;
+  }
+  .Navbar .false-style{
+    top:-400px;
+  }
+  .responsive ul a{
+    color: white;
+  }
+  

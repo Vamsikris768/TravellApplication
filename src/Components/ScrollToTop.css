@@ -1,0 +1,19 @@
+.true-style{
+    display:block;
+}
+.false-style{
+    display: none;
+}
+.ScrollToTop{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: #1900ff39;
+    padding: 1rem;
+}
+.logo1{
+    height: 1.5rem;
+}
